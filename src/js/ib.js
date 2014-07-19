@@ -351,7 +351,7 @@
 					picture: object.attr("src"),
 					name: feedItem.title,
 					//caption: feedItem.title + ((feedItem.creator!="")?(" by " + feedItem.creator):""),
-					description: ((feedItem.creator!="")?(" by " + feedItem.creator):"") + " via " + base),
+					description: ((feedItem.creator!="")?(" by " + feedItem.creator):"") + " via " + base,
 					properties: {
 						"Inspiration Browser": { text: "Let's get inspired.", href: base }
 					}
