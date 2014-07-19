@@ -1,0 +1,137 @@
+<?
+/*
+	Inspiration Browser
+
+	http://inspirationbrowser.com
+	https://github.com/Yeonil/InspirationBrowser
+	
+	제작 및 배포: 훠닐
+*/
+$base = "http://inspirationbrowser.com/";
+$img = "img";
+$facebook_app_id = "";
+?>
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<title>영감 브라우저 - 영감을 주는 사이트, 디자인, 영감을 얻으세요.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="영감 브라우저는 그래픽 디자인, 웹 디자인, 건축 디자인, 산업 디자인, 로고와 문자 디자인, 사진, 패션, 자동차등의 영감을 주는 비주얼한 자료들을 모아서 제공합니다. 엄선된 수많은 사이트에서 실시간으로 데이터를 가져오고 있습니다. " />
+<meta name="keywords" content="영감,영감을 주는 사이트,영감 사이트,웹디자인,웹,디자인,건축,건축디자인,일러스트, 산업 디자인,로고, 로고디자인, 문자,문자 디자인, 사진, 패션, 자동차, 영감을 주는 웹디자인,collection of visual inspiration, design inspirations, interactive design, typography design, type design, lettering design, design ideas, inspirations for Web Designers, best web design, around the world, inspiring web design, creat design, design resources, design inspiration, illustrations, logos, creatives, design publication, beautiful design, architecture and design, design products, design idea, home design trends, design innovations, graphic design, professional logos, trademark design, logo design, industrial design, photography and design, photography inspirations, daily, weekly">
+<meta name="Abstract" content="영감 브라우저는 그래픽 디자인, 웹 디자인, 건축 디자인, 산업 디자인, 로고와 문자 디자인, 사진, 패션, 자동차등의 영감을 주는 비주얼한 자료들을 모아서 제공합니다. 엄선된 수많은 사이트에서 실시간으로 데이터를 가져오고 있습니다. " />
+<meta name="Copyright" content="© Hornil Co." />
+<meta name="Revisit-After" content="1 Days" />
+<meta name="Robots" content="All" />
+<meta id="mainviewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta property="fb:app_id" content="<?=$facebook_app_id?>"/>
+<script type="text/javascript" src="<?=$base?>js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<?=$base?>ib_lang.js"></script>
+<script type="text/javascript" src="<?=$base?>ib.js"></script>
+<link rel="stylesheet" type="text/css" href="<?=$base?>ib.css" />
+<link rel="shortcut icon" href="<?=$base?><?=$img?>/favicon.ico" />
+</head>
+<body>
+
+<div id="fb-root"></div>
+
+<div id="msg">영감 브라우저에 오신것을 환영합니다.</div>
+
+<div id="aboutBox">
+	<div id="aboutBack" ></div>
+	<div id="about">
+		<h1><script>lang.writeString("ID_ABOUT");</script></h1>
+		<div id="aboutTextBox"><script>lang.writeString("ID_ABOUT_DESC");</script></div>
+		<div id="aboutImageBox"><img id="aboutImage" src=""/></div>
+		<img src="<?=$base?><?=$img?>/support.png"/>
+		<p><a href="https://www.facebook.com/InspirationBrowser" target="_blank" style="color: #1458AB;"><script>lang.writeString("ID_IB_ON_FACEBOOK");</script></a></p>
+		
+		<div id="supportFacebookLike">
+		<div class="fb-like" data-href="http://inspirationbrowser.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+
+		<div id="aboutCloseButton"><script>lang.writeString("ID_CLOSE");</script></div>
+		
+	</div>
+</div>
+
+<header>
+	<div id="menuBox" class="wide">
+		<div id="menuBack"></div>
+		<div id="menu"></div>
+	</div>
+
+	<div id="containerHeaderBox">
+		<div id="containerHeaderBack"></div>
+		<div id="containerHeader">
+			
+			<div class="title">
+				<img src="<?=$base?><?=$img?>/title_back.png"/><span id="mainTitle"><script>lang.writeString("ID_INSPIRATION_BROWSER");</script></span> <span id="titleCategory"></span>
+				<span id="pleaseChooseMenu"><script>lang.writeString("ID_CHOOSE_OTHER_CATEGORIES");</script></span>
+			</div>
+
+			<div class="size wide">
+				<ul class="buttons">
+					<li id="slideshow" class="selected" title="슬라이드쇼"><img src="<?=$base?><?=$img?>/slideshow.png"/></li>
+					<li id="smallSize" title="작게 보기"><img src="<?=$base?><?=$img?>/size_small.png"/></li>
+					<li id="mediumSize" title="일반 보기"><img src="<?=$base?><?=$img?>/size_medium.png"/></li>
+					<li id="bigSize" title="크게 보기"><img src="<?=$base?><?=$img?>/size_big.png"/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="ib_new_ad"></div>
+
+<article>
+<div id="container"></div>
+</article>
+
+<div id="ShowMoreBox">
+<div id="ShowMore"><script>lang.writeString("ID_SHOW_MORE");</script></div>
+</div>
+
+<div id="adContainerHeaderBox">
+	<div id="adContainerHeaderBack"></div>
+	<div id="adContainerHeader">
+		<div class="title" onclick=""><script>lang.writeString("ID_AD");</script></div>
+	</div>
+</div>
+
+<div id="adContainer">
+	<div class="support"></div>
+	<div class="ad ad150 wau"></div>
+	<div class="ad empty" >&nbsp;</div>
+</div>
+
+<div id="fullImageViewBack"></div>
+<div id="fullImageView">
+	<div id="fullImageViewContent"></div>
+	<div id="fullImageDesc">
+		<div id="pinitbutton"><img id="fullImagePinitbutton" src="<?=$base?><?=$img?>/sns_pinterest.png" /><img id="fullImageFacebookbutton" src="<?=$base?><?=$img?>/sns_facebook.png" /></div>
+		<div id="fullImageTitle"></div>
+		<div id="fullImageAuthor"></div>
+		<div id="fullImageLink"><script>lang.writeString("ID_VISIT_WEBSITE");</script></div>
+	</div>
+	<div id="fullImageComments"></div>
+	<div id="fullImageCommentsBottom"></div>
+	<div id="previousImageButton" title="Press left arrow key to previous."></div>
+	<div id="nextImageButton" title="Press right arrow key to next."></div>
+	<img id="fullscreenclosebutton" src="<?=$base?><?=$img?>/fullscreen_close.png" title="Press ESC to close."/>
+</div>
+
+<div id="pinitbuttonparent">
+	<div id="pinitbuttonbox" >
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a id="pinitbutton" class="addthis_button_pinterest_share"></a>
+		</div>
+		<!-- AddThis Button END -->
+	</div>
+</div>
+
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+<?php include_once("ib_analyticstracking.php"); ?>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Options +FollowSymLinks
+ErrorDocument 404 /
