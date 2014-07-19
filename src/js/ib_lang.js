@@ -43,8 +43,8 @@
 
 	// 지원하는 언어 목록
 	var datas = [
-		{ id: "en", url: "ib_en.js "},	
-		{ id: "kr", url: "ib_kr.js "},
+		{ id: "en", url: "js/ib_en.js "},	
+		{ id: "kr", url: "js/ib_kr.js "},
 	];
 
 	function getDataUrl(langCode){
