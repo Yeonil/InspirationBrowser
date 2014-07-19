@@ -60,7 +60,7 @@ ul.buttons li { display: inline-block; margin:0; margin-right: 10px; cursor: poi
 /* Header container*/
 #containerHeaderBox		{ border: 0px solid blue; position: fixed; top: 0px; left: 0px; right: 0px; height: 60px; z-index: 10000; }
 #containerHeaderBack	{ border: 0px solid red; position: fixed; top: 0px; left: 0px; right: 0px; height: 60px; background-color: white; opacity: 0.9; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; filter: alpha(opacity=90); }
-#containerHeader		{ border: 0px solid green; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; text-align: center; line-height: 60px; /*background-image: url('ibimg/title_back2.png'); background-position: 12px 0px; background-repeat:no-repeat;*/ border-bottom:1px solid silver; }
+#containerHeader		{ border: 0px solid green; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; text-align: center; line-height: 60px; /*background-image: url('img/title_back2.png'); background-position: 12px 0px; background-repeat:no-repeat;*/ border-bottom:1px solid silver; }
 	.title				{ color: black; font-size: 23px; text-align: left; }
 	.title img			{ vertical-align: middle; margin-right: 15px; margin-left: 15px; margin-top: 3px; }
 		#mainTitle		{ cursor: help; }
@@ -73,7 +73,7 @@ ul.buttons li { display: inline-block; margin:0; margin-right: 10px; cursor: poi
 	.srcElement			{ margin:0; padding:0; border:0px solid red; float:left; }
 	.temp				{ border-radius: 8px;  border: 1px solid #ddd; position: absolute; background-color: #ddd; }
 	
-	.defaultDescBack	{ display: none; border: 0px solid blue; position: absolute; left: 0px; bottom: 0px; right:0px; padding: 8px; font-size: 14px;  color: white; background-image: url('ibimg/opacity60back.png'); background-position: 0px 0px; background-repeat:repeat-x;  text-shadow: 1px 1px 4px black; }
+	.defaultDescBack	{ display: none; border: 0px solid blue; position: absolute; left: 0px; bottom: 0px; right:0px; padding: 8px; font-size: 14px;  color: white; background-image: url('img/opacity60back.png'); background-position: 0px 0px; background-repeat:repeat-x;  text-shadow: 1px 1px 4px black; }
 	.defaultDesc		{ display: none; border: 0px solid blue; position: absolute; left:0px; bottom: 0px; right:0px; padding: 8px; font-size: 14px; color: white;  text-shadow: 1px 1px 4px black; }
 	.overlayTopBack		{ border: 0px solid blue; position: absolute; left:0px; top: 0px; right:0px; bottom: 60px; background-color: white; opacity: 0.1; display: none; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"; filter: alpha(opacity=10); }
 	.overlayTop			{ border: 0px solid red; position: absolute; left:0px; top: 0px; right: 0px; display: none; color:white; text-shadow: 1px 1px 4px black;  }
@@ -152,8 +152,8 @@ ul.buttons li { display: inline-block; margin:0; margin-right: 10px; cursor: poi
 #fullscreenclosebutton  { position: relative; left: 20px; top: 20px; z-index: 10050; cursor: pointer;  }
 	.fullscreen			{ position: absolute; right:0; width: 32px; display: inline-block; *display:inline; zoom:1; height:60px; cursor: pointer; line-height: 60px; margin-right: 10px; clear:both; }
 	.fullscreen img		{ width: 32px;  margin-top: 14px; margin-right: 10px; }
-	#previousImageButton{ z-index: 11000;position: absolute; width: 27px; height: 66px;background-image: url('ibimg/previous.png'); cursor: pointer; }
-	#nextImageButton	{z-index: 11000; position: absolute;  width: 27px; height: 66px;background-image: url('ibimg/next.png'); cursor: pointer; }
+	#previousImageButton{ z-index: 11000;position: absolute; width: 27px; height: 66px;background-image: url('img/previous.png'); cursor: pointer; }
+	#nextImageButton	{z-index: 11000; position: absolute;  width: 27px; height: 66px;background-image: url('img/next.png'); cursor: pointer; }
 
 #pinitbuttonbox { position:absolute; z-index: 20000; border:0px solid yellow; width: 32px; height: 32px; display:none; }
 #pinitbuttonbox:hover{ border:0px solid red; }
